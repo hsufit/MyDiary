@@ -19,7 +19,7 @@ private:
 
 };
 
-
+/*
 mydiary::mydiary(int &argc, char **argv)
 	: QApplication(argc, argv)
 {
@@ -32,4 +32,4 @@ mydiary::mydiary(int &argc, char **argv)
 
 	window->show();
 }
-
+*/

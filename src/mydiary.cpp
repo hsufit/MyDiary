@@ -3,7 +3,7 @@
 mydiary::mydiary(int &argc, char **argv)
 	: QApplication(argc, argv)
 {
-	window = new Qwidget();
+	window = new QWidget();
 
 	save = new QPushButton("Save",window);
 	load = new QPushButton("Load",window);
