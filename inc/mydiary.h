@@ -1,6 +1,9 @@
 #include<QApplication>
-#include<QPushButton>
-#include<QTextEdit>
+
+class QPushButton;
+class QTextEdit;
+class QBoxLayout;
+
 
 class mydiary : public QApplication {
 	Q_OBJECT
@@ -10,26 +13,15 @@ public:
 	virtual ~mydiary(){}
 
 private:
-	QWidget *window;
+	QWidget *window,*window01;
 	QPushButton *save
 			  , *load;
 
 	QTextEdit *textarea;
 
+    QBoxLayout *hookplace_0,*hookplace_01;
 
 };
 
-/*
-mydiary::mydiary(int &argc, char **argv)
-	: QApplication(argc, argv)
-{
-	window = new QWidget();
 
-	save = new QPushButton("Save",window);
-	load = new QPushButton("Load",window);
 
-	textarea = new QTextEdit(window);
-
-	window->show();
-}
-*/
