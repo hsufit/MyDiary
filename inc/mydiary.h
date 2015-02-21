@@ -4,8 +4,8 @@
 //#include<QtWidgets/QWidget>
 
 class QPushButton;
-class QTextEdit;
 class QBoxLayout;
+class sectionedit;
 
 
 class mydiary : public QApplication {
@@ -20,7 +20,7 @@ private:
 	QPushButton *save
 			  , *load;
 
-	QTextEdit *textarea;
+	sectionedit *textarea;
 
     QBoxLayout *hookplace_0,*hookplace_01;
 

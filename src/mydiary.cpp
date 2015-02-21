@@ -1,10 +1,10 @@
 #include<QPushButton>
-#include<QTextEdit>
+//#include<QTextEdit>
 #include<QBoxLayout>
-
+#include<QObject>
 
 #include"mydiary.h"
-
+#include"sectionedit.h"
 
 mydiary::mydiary(int &argc, char **argv)
 	: QApplication(argc, argv)
@@ -18,8 +18,13 @@ mydiary::mydiary(int &argc, char **argv)
 	save = new QPushButton("Save");
 	load = new QPushButton("Load");
 
-	textarea = new QTextEdit(window);
+	textarea = new sectionedit(window);
 
+//connect signal&slots
+	connect(save, SIGNAL(clicked()), textarea, SLOT(save()));
+	connect(load, SIGNAL(clicked()), textarea, SLOT(load()));
+
+//window setup
     hookplace_0->addWidget(window01);
     hookplace_0->addWidget(textarea);
 
@@ -27,6 +32,7 @@ mydiary::mydiary(int &argc, char **argv)
     hookplace_01->addWidget(load);
 
 	window->show();
+
 }
 
 

@@ -2,7 +2,7 @@
  *    This is a personal observation and tracking tool.
  *    I hope it will be useful to my life.
  *
- *    using Qt 4.8.6 to build it
+ *    using Qt 5.2.1 to build it
  *
  */
 
