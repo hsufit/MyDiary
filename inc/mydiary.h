@@ -1,4 +1,7 @@
 #include<QApplication>
+#include<QtWidgets>
+//#include<QtWidgets/QApplication>
+//#include<QtWidgets/QWidget>
 
 class QPushButton;
 class QTextEdit;
