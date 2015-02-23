@@ -1,17 +1,15 @@
-#include<iostream>
 #include<QInputDialog>
-
+/*
+--------using for debug-------
 #include<QMessageBox>
-
+QMessageBox::information(parent,"for save", "hello there");
+*/
 #include"sectionedit.h"
 
-sectionedit::sectionedit(QWidget *parent=0)
+sectionedit::sectionedit(QWidget *parent)
 	: QTextEdit(parent)
-{
-//QMessageBox::information(parent,"for save", "hello there");
-}
+{}
 
-sectionedit::~sectionedit(){}
 
 void sectionedit::save() {
 /*QString text;

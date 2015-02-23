@@ -1,10 +1,10 @@
 #include<QApplication>
-#include<QtWidgets>
 //#include<QtWidgets/QApplication>
 //#include<QtWidgets/QWidget>
 
 class QPushButton;
-class QBoxLayout;
+class QGroupBox;
+class QWidget;
 class sectionedit;
 
 
@@ -19,10 +19,10 @@ private:
 	QWidget *window,*window01;
 	QPushButton *save
 			  , *load;
+	QGroupBox *bookmenu;
 
 	sectionedit *textarea;
 
-    QBoxLayout *hookplace_0,*hookplace_01;
 
 };
 

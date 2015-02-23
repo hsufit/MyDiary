@@ -1,15 +1,11 @@
-//class QTextEdit;
 #include<QTextEdit>
 
-class sectionedit : public  QTextEdit {
+class sectionedit : public QTextEdit {
 	Q_OBJECT;
 
 public:
-//	sectionedit(const QString &, QWidget *);
-	sectionedit(QWidget *);
-	~sectionedit();
-
-	
+	sectionedit(QWidget *parent = 0);
+//	virtual ~sectionedit();
 
 public slots :
 	void save();
