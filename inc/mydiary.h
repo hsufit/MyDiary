@@ -5,7 +5,7 @@
 class QPushButton;
 class QGroupBox;
 class QWidget;
-class sectionedit;
+class sectionwidget;
 
 
 class mydiary : public QApplication {
@@ -21,7 +21,7 @@ private:
 			  , *load;
 	QGroupBox *bookmenu;
 
-	sectionedit *textarea;
+	sectionwidget *bookarea;
 
 
 };

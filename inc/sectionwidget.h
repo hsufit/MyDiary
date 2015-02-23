@@ -12,6 +12,8 @@ class sectionwidget : public QWidget {
 public:
 	sectionwidget(QWidget *parent=0);
 
+	QWidget *retText();
+
 private:
 	sectionedit *text;
 	QLineEdit *name;

@@ -5,7 +5,7 @@
 #include<QWidget>
 
 #include"mydiary.h"
-#include"sectionedit.h"
+#include"sectionwidget.h"
 
 mydiary::mydiary(int &argc, char **argv)
 	: QApplication(argc, argv)
@@ -15,22 +15,23 @@ mydiary::mydiary(int &argc, char **argv)
 	bookmenu = new QGroupBox();
 		save = new QPushButton("Save");
 		load = new QPushButton("Load");
-	textarea = new sectionedit();
+	bookarea = new sectionwidget();
 
 //connect signal&slots
-	connect(save, SIGNAL(clicked()), textarea, SLOT(save()));
-	connect(load, SIGNAL(clicked()), textarea, SLOT(load()));
+	connect(save, SIGNAL(clicked()), bookarea->retText(), SLOT(save()));
+	connect(load, SIGNAL(clicked()), bookarea->retText(), SLOT(load()));
 
 //window setup
 
     QBoxLayout *hookplace_0 = new QBoxLayout(QBoxLayout::LeftToRight, window);
     	hookplace_0->addWidget(bookmenu);
-    	hookplace_0->addWidget(textarea);
+    	hookplace_0->addWidget(bookarea);
 
 
     QBoxLayout *hookplace_00 = new QBoxLayout(QBoxLayout::TopToBottom, bookmenu);
 		hookplace_00->addWidget(save);
 		hookplace_00->addWidget(load);
+
 
 	window->show();
 }
