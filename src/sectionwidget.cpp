@@ -11,18 +11,18 @@ sectionwidget::sectionwidget(QWidget *parent)
 {
 //new object
 	name = new QLineEdit();
-	textinfo = new QLabel;
+	textinfo = new QLabel("0000/0000");
 	text = new sectionedit();
 
 //signal connect
 //ui setup
-	QWidget *widget00 = new QWidget();
-	QBoxLayout *hookplace00 = new QBoxLayout(QBoxLayout::LeftToRight,widget00);
+	QWidget *widget_00 = new QWidget();
+	QBoxLayout *hookplace00 = new QBoxLayout(QBoxLayout::LeftToRight,widget_00);
 		hookplace00->addWidget(name);
 		hookplace00->addWidget(textinfo);
 
 	QBoxLayout *hookplace0 = new QBoxLayout(QBoxLayout::TopToBottom,this);
-	hookplace0->addWidget(widget00);
+	hookplace0->addWidget(widget_00);
 	hookplace0->addWidget(text);
 
 }

@@ -10,7 +10,7 @@ class sectionwidget : public QWidget {
 	Q_OBJECT;
 
 public:
-	sectionwidget(QWidget *parent=0);
+	sectionwidget(QWidget *parent = 0);
 
 	QWidget *retText();
 

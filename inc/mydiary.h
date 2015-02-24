@@ -2,10 +2,13 @@
 //#include<QtWidgets/QApplication>
 //#include<QtWidgets/QWidget>
 
+
+#include<QWidget>
+
 class QPushButton;
 class QGroupBox;
-class QWidget;
-class sectionwidget;
+//class QWidget;
+class diarywidget;
 
 
 class mydiary : public QApplication {
@@ -21,7 +24,7 @@ private:
 			  , *load;
 	QGroupBox *bookmenu;
 
-	sectionwidget *bookarea;
+	diarywidget *bookarea;
 
 
 };

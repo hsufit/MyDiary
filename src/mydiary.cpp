@@ -2,10 +2,10 @@
 #include<QBoxLayout>
 #include<QGroupBox>
 #include<QObject>
-#include<QWidget>
+//#include<QWidget>
 
 #include"mydiary.h"
-#include"sectionwidget.h"
+#include"diarywidget.h"
 
 mydiary::mydiary(int &argc, char **argv)
 	: QApplication(argc, argv)
@@ -15,11 +15,9 @@ mydiary::mydiary(int &argc, char **argv)
 	bookmenu = new QGroupBox();
 		save = new QPushButton("Save");
 		load = new QPushButton("Load");
-	bookarea = new sectionwidget();
+	bookarea = new diarywidget();
 
 //connect signal&slots
-	connect(save, SIGNAL(clicked()), bookarea->retText(), SLOT(save()));
-	connect(load, SIGNAL(clicked()), bookarea->retText(), SLOT(load()));
 
 //window setup
 
